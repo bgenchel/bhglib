@@ -6,3 +6,6 @@
 .*.*.*.un~
 
 *.pyc
+
+*.text
+test_text/
