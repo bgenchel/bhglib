@@ -23,36 +23,6 @@ class BST(object):
     def __len__(self):
         return self.size
 
-    # def insert(self, item):
-    #     """
-    #     insert a copy of a piece of data into the BST.
-    #     return True if successful insert, False if item is already in the tree
-    #     """
-    #     if self.empty():
-    #         self.root = BSTNode(item)
-    #         return True
-
-    #     current = self.root
-    #     last = None
-    #     while current is not None:
-    #         last = current
-    #         if item < current.data:
-    #             current = current.left
-    #         elif current.data < item:
-    #             current = current.right
-    #         else:
-    #             return False  # already in the tree
-
-    #     newNode = BSTNode(item)
-    #     if item < last.data:
-    #         last.left = newNode
-    #         newNode.parent = last
-    #     else:
-    #         last.right = newNode
-    #         newNode.parent = last
-
-    #     return True
-
     def insert(self, item):
         if self.empty():
             self.root = BSTNode(item)
